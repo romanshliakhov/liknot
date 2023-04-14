@@ -8,7 +8,7 @@ import './components/links.js';
 import './components/hideSticky.js';
 import './components/lightGallery.js';
 // import './components/phoneMask.js';
-// import './components/tabs.js';
+import './components/tabs.js';
 // import './components/side-panel.js';
 // import './components/closeAlert.js';
 // import './components/choices.js';

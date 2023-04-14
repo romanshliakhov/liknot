@@ -7,8 +7,97 @@
     @include('partials/header.html',{})
 
     <main class="main">
-      <section>
-        main
+
+      <section class="payments">
+        <div class="container">
+          <div class="payments__wrapp">
+            <div class="payments__title h3">Как происходят выплаты?</div>
+
+            <div class="payments__info tabs">
+              <ul class="payments__controls">
+                <li class="payments__controls-item tablinks active" tabs-btn="status">
+                  <button class="h2">Выплаты для 3-х статусов партнеров</button>
+                </li>
+                <li class="payments__controls-item tablinks" tabs-btn="payments">
+                  <button class="h2">Платежные системы</button>
+                </li>
+              </ul>
+
+              <ul class="payments__tabcontents">
+                <li class="payments__tabcontent tabcontent active" tabs-content="status">
+                  <div class="payments__content">
+                    <div class="payments__content-info">
+                      <div class="h3">В нашей системе предусмотрено 3 статуса партнеров: новичок, профи  и эксперт.</div>
+
+                      <p>Все веб-мастера после регистрации получают статус «новичок». Партнеры с этим статусом могут использовать весь функционал системы и подключать публичные офферы.</p>
+                    </div>
+
+                    <ul class="payments__content-status">
+                      <li>
+                        <span>Статус «новичок»</span>
+                        <p>получает выплаты после их поступления от рекламодателя в период с 15 по 30 (31) число текущего месяца за трафик предыдущего.</p>
+                      </li>
+                      <li>
+                        <span>Статус «профи»</span>
+                        <p>та категория веб-мастеров, которые работают с нами минимум 6 месяцев и имеют оборот больше 250 000 в месяц.</p>
+                      </li>
+                      <li>
+                        <span>Статус «эксперт»</span>
+                        <p>получают проверенные веб-мастера с оборотом более 500 000 в месяц.</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="payments__tabcontent tabcontent" tabs-content="payments">
+                  <div class="payments__content">
+                    <div class="payments__content-info">
+                      <div class="h3">Вывод средств<br> для веб-мастеров доступен на любой удобный сервис.</div>
+
+                      <p>
+                        Минимальная сумма вывода в среднем — 3000 рублей. Запрашивать вывод средств можно неограниченное количество раз.<br>
+                        Вывод средств доступен на самые<br> востребованные платежные системы + <br> расчетный счет ИП/самозанятого. Есть опция вывода денег на криптовалюту (по запросу).
+                      </p>
+                    </div>
+
+                    <ul class="payments__methods">
+                      <li>
+                        <svg width='117' height='38'>
+                          <use href='img/sprite/sprite.svg#visa'></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width='119' height='78'>
+                          <use href='img/sprite/sprite.svg#mastercard'></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width='121' height='111'>
+                          <use href='img/sprite/sprite.svg#bill'></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width='99' height='113'>
+                          <use href='img/sprite/sprite.svg#bitcoin'></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width='132' height='60'>
+                          <use href='img/sprite/sprite.svg#qiwi'></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg width='95' height='67'>
+                          <use href='img/sprite/sprite.svg#ymoney'></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="faq" id="faq">
