@@ -1,0 +1,26 @@
+.btn {
+  height: 63px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 7px;
+  background-color: var(--color-magenta);
+  font-family: var(--font-family-inter);
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  color: var(--color-white);
+  border-radius: 12px;
+  transition: all 0.4s ease;
+
+  &:hover,
+  &:active {
+    background-color: var(--color-magenta-hover);
+  }
+
+  &--login {
+    height: 46px;
+    max-width: 170px;
+  }
+}

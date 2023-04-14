@@ -1,0 +1,53 @@
+h1 {
+  margin-bottom: 32px;
+  width: 100%;
+  font-family: var(--font-family-gothampro);
+  font-size: clamp(40px, 8.322vw, 64px);
+  line-height: clamp(48px, 9.363vw, 72px);
+  font-weight: 800;
+  text-align: center;
+}
+
+h2 {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 32px;
+  font-family: var(--font-family-futura);
+  font-size: clamp(40px, 6.242vw, 48px);
+  line-height: clamp(48px, 7.282vw, 56px);
+  font-weight: 800;
+  margin-top: 56px;
+}
+
+h3 {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 32px;
+  font-family: var(--font-family-gothampro);
+  font-size: clamp(32px, 5.202vw, 40px);
+  line-height: clamp(40px, 6.242vw, 48px);
+  font-weight: 800;
+  margin-top: 56px;
+}
+
+h4 {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 32px;
+  font-family: var(--font-family-gothampro);
+  font-size: clamp(24px, 4.161vw, 32px);
+  line-height: clamp(40px, 4.161vw, 32px);
+  font-weight: 800;
+  margin-top: 56px;
+}
+
+h5 {
+  max-width: 800px;
+  width: 100%;
+  margin-bottom: 32px;
+  font-family: var(--font-family-gothampro);
+  font-size: clamp(21px, 3.121vw, 24px);
+  line-height: clamp(24px, 4.161vw, 32px);
+  font-weight: 800;
+  margin-top: 56px;
+}

@@ -1,0 +1,45 @@
+.mobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  z-index: 10;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+
+
+  @media (max-width: 959px) {
+    display: block;
+  }
+
+  &.active {
+    transition: all 0.5s ease;
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+
+    .mobile__menu,
+    .header__nav-list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &__menu {
+    padding: 0 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 45px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
