@@ -6,6 +6,7 @@
   justify-content: center;
   grid-gap: 7px;
   background-color: var(--color-magenta);
+  border: 2px solid var(--color-magenta);
   font-family: var(--font-family-inter);
   font-size: 16px;
   line-height: 21px;
@@ -16,11 +17,24 @@
 
   &:hover,
   &:active {
+    border: 2px solid var(--color-magenta-hover);
     background-color: var(--color-magenta-hover);
   }
 
   &--login {
     height: 46px;
     max-width: 170px;
+  }
+
+  &--border {
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      border: 2px solid var(--color-gold);
+      background-color: var(--color-gold);
+      color: var(--color-main);
+    }
   }
 }
