@@ -1,0 +1,33 @@
+.advantages {
+  margin-bottom: 140px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+
+    span {
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__list-icon {
+    margin-bottom: 20px;
+    width: 91px;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--socials-bg);
+    border-radius: 20px;
+  }
+}
