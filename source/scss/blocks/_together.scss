@@ -1,0 +1,17 @@
+.together {
+  margin-bottom: 170px;
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 30px;
+  }
+
+  &__info {
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 50px;
+  }
+}

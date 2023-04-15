@@ -26,6 +26,12 @@
     max-width: 170px;
   }
 
+  &--gold {
+    border: 2px solid var(--color-gold);
+    background-color: var(--color-gold);
+    color: var(--color-main);
+  }
+
   &--border {
     border: 2px solid #FFFFFF;
     background-color: transparent;

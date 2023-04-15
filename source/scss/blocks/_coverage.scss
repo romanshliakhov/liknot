@@ -1,0 +1,40 @@
+.coverage {
+  margin-bottom: 200px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    grid-gap: 30px;
+  }
+
+  &__items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    background-color: var(--socials-bg);
+    border-radius: 20px;
+    padding: 50px;
+  }
+
+  &__item-info {
+    margin-bottom: 26px;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+
+    li {
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      grid-gap: 10px;
+    }
+  }
+}
