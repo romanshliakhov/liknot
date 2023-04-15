@@ -1,0 +1,34 @@
+.reasons {
+  margin-bottom: 160px;
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-gap: 81px;
+  }
+
+  &__info {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__info-item {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--socials-bg);
+    border-radius: 20px;
+    text-align: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      height: 178px;
+    }
+  }
+}
