@@ -1,0 +1,45 @@
+.hero {
+  padding: 150px 0 180px;
+
+  &__wrapp {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 120px;
+  }
+
+  &__head {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 445px 540px;
+    grid-gap: 120px;
+    justify-content: space-between;
+  }
+
+  &__btns {
+    margin-top: 68px;
+  }
+
+  &__achievements {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__achievements-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__achievements-numbers {
+    font-size: 56px;
+    line-height: 73px;
+  }
+
+  &__achievements-descr {
+    max-width: 180px;
+    font-weight: 500;
+    color: var(--color-grey);
+    text-align: center;
+  }
+}
