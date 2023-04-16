@@ -171,5 +171,11 @@ input[type="number"] {
 .policy,
 .development {
   color: var(--color-grey);
-  text-decoration-line: underline;
+  text-decoration: underline;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: var(--color-gold);
+    text-decoration: none;
+  }
 }

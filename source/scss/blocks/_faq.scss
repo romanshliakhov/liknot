@@ -15,17 +15,32 @@
     grid-gap: 30px;
   }
 
-  &__questions-item {
+  &__question {
+    width: 100%;
     padding: 20px 30px;
     border: 1px solid var(--color-gold);
     border-radius: 20px;
-  }
-
-  &__question {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     grid-gap: 15px;
+    transition: all 0.4s ease;
+
+    svg {
+      stroke: #FFC700;
+      transition: all 0.4s ease;
+    }
+
+    &._active {
+      svg {
+        // stroke: white;
+        transform: rotate(-45deg);
+        // fill: #FFC700;
+      }
+    }
+  }
+
+  &__answer {
+    padding: 30px ;
   }
 }

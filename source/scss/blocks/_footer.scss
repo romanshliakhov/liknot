@@ -63,5 +63,13 @@ footer {
         margin-bottom: 41px;
       }
     }
+
+    a {
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: var(--color-gold);
+      }
+    }
   }
 }
