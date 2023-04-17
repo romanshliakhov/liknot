@@ -1,25 +1,44 @@
 <div class="modal">
-  <div class="modal__container" data-animation="fade" data-speed="300" data-target="subscribe">
-    <div class="modal__wrapper modal__wrapper-subscribe">
+  <div class="modal__container" data-target="form">
+    <div class="modal__wrapper">
       <div class="modal__close">
         <svg width='24' height='24'>
-          <use href='img/sprite/sprite.svg#delete'></use>
+          <use href='img/sprite/sprite.svg#close'></use>
         </svg>
       </div>
 
-      <div class="modal__subscribe subscribe">
-        <p class="subscribe__title">Підпишіться на розсилку</p>
+      <div class="modal__box">
+        <div class="modal__box-head">
+          <div class="modal__box-title h3">Вы рекламодатель<br> и хотите сотрудничать?</div>
+          <p class="modal__box-descr h2">
+            Пожалуйста, оставьте свои контакты. <br>
+            Наш менеджер свяжется с вами в ближайшее время.
+          </p>
+        </div>
 
-        <p class="subscribe__text">Дізнавайтесь першими про акції та новинки від видавництва ArtHuss</p>
+        <form class="modal__form" action="">
+          <div class="modal__form-head">
+            <label class="modal__form-label">
+              <input class="modal__form-input" type="text" name="name" placeholder="Ваше ФИО">
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input" type="email" name="email" placeholder="Email">
+            </label>
+            <label class="modal__form-label">
+              <input class="modal__form-input" type="text" name="company" placeholder="Название компании">
+            </label>
+          </div>
 
-        <form class="subscribe__form">
-          <label class="subscribe__label">
-            <input class="subscribe__email" type="text" placeholder="Email">
-            <button class="subscribe__btn btn btn--subscribe">Підписатись</button>
-          </label>
+          <div class="modal__form-bot">
+            <label class="modal__checkbox-label">
+              <input class="modal__checkbox-input" type="checkbox" name="checkbox" checked>
+              <span class="modal__checkbox-text">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности сайта.</span>
+            </label>
+
+            <button class="modal__btn" type="submit" >Отправить</button>
+          </div>
         </form>
       </div>
     </div>
   </div>
-
 </div>

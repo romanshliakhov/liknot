@@ -26,6 +26,14 @@
     max-width: 170px;
   }
 
+  &--404 {
+    max-width: 232px;
+  }
+
+  &--coockie {
+    max-width: 255px;
+  }
+
   &--gold {
     border: 2px solid var(--color-gold);
     background-color: var(--color-gold);

@@ -1,0 +1,130 @@
+.coockie {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  padding: 20.5px 0;
+  transition: all 0.4s ease;
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  background-color: var(--color-main);
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+  }
+
+  &__descr {
+    max-width: 550px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+}
+
+
+.banner {
+  position: sticky;
+  top: 20px;
+  max-width: 430px;
+  width: 100%;
+  background-color: var(--system-5);
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-gap: 30px;
+  flex-shrink: 0;
+
+  @media (max-width: 1440px) {
+    max-width: 330px;
+  }
+
+  @media (max-width: 1024px) {
+      transform: translateX(-100%);
+      transition: all 1.5s;
+  }
+
+  @media (max-width: 576px) {
+      top: 85%;
+      flex-direction: row;
+      align-items: center;
+      max-width: 100%;
+      width: 100%;
+      background-color: var(--blue-6);
+      padding: 5px 10px;
+      text-align: left;
+  }
+
+  &.hide {
+      transform: translateX(100vw);
+  }
+
+  &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      grid-gap: 30px;
+
+      @media (max-width: 576px) {
+          grid-gap: 14px;
+          text-align: left;
+      }
+  }
+
+  &__text {
+      @media (max-width: 576px) {
+          color: var(--system-6);
+      }
+  }
+
+  &__button {
+      color: var(--system-6);
+      max-width: 300px;
+      width: 100%;
+      background-color: var(--blue-6);
+
+      @media (max-width: 576px) {
+          height: 24px;
+          justify-content: start;
+      }
+  }
+
+  &__close {
+      position: absolute;
+      display: flex;
+      right: 18.5px;
+      top: 18.5px;
+      z-index: 5;
+      cursor: pointer;
+
+      svg {
+        stroke: #181818;
+      }
+
+      @media screen and (min-width: 1025px) {
+          display: none;
+      }
+
+      @media (max-width: 576px) {
+          top: -50px;
+          right: 10px;
+      }
+  }
+
+  &__image {
+      @media (max-width: 576px) {
+          max-width: 125px;
+      }
+  }
+}
