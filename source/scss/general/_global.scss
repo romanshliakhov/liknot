@@ -6,9 +6,7 @@ body {
   position: relative;
   background-color: var(--color-main);
   font-family: var(--font-family-inter);
-  font-size: 18px;
   font-size: clamp(16px, 2.347vw, 18px);
-  line-height: 23px;
   line-height: clamp(21px, 2.999vw, 23px);
   font-weight: 400;
   color: var(--color-white);

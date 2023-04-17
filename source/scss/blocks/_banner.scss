@@ -1,3 +1,20 @@
 .banner {
   margin-bottom: 160px;
+
+  @media (max-width: 992px) {
+    margin-bottom: clamp(100px, 15.625vw, 120px);
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: clamp(90px, 10.081vw, 100px);
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: clamp(60px, 12.153vw, 70px);
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 }
