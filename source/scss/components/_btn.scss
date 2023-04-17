@@ -38,12 +38,26 @@
     border: 2px solid var(--color-gold);
     background-color: var(--color-gold);
     color: var(--color-main);
+
+    &:hover,
+    &:active {
+      color: var(--color-white);
+    }
   }
 
   &--border {
     border: 2px solid #FFFFFF;
     background-color: transparent;
 
+    &:hover,
+    &:active {
+      border: 2px solid var(--color-gold);
+      background-color: var(--color-gold);
+      color: var(--color-main);
+    }
+  }
+
+  &--webmaster {
     &:hover,
     &:active {
       border: 2px solid var(--color-gold);

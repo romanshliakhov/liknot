@@ -7,7 +7,9 @@ body {
   background-color: var(--color-main);
   font-family: var(--font-family-inter);
   font-size: 18px;
+  font-size: clamp(16px, 2.347vw, 18px);
   line-height: 23px;
+  line-height: clamp(21px, 2.999vw, 23px);
   font-weight: 400;
   color: var(--color-white);
   overflow-x: hidden;
@@ -165,6 +167,18 @@ input[type="number"] {
   width: 100%;
   margin: 0 auto;
   padding: 0 31px;
+
+  @media (max-width: 991px) {
+    padding: 0 39px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0 33px;
+  }
+
+  @media (max-width: 575px) {
+    padding: 0 15px;
+  }
 }
 
 
