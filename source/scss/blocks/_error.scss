@@ -1,6 +1,10 @@
 .error {
   padding: 84px 0;
 
+  @media (max-width: 992px) {
+    padding: 55px 0;
+  }
+
   &__wrapp {
     display: flex;
     align-items: center;
@@ -17,5 +21,30 @@
   &__descr {
     max-width: 417px;
     margin-bottom: 23px;
+
+    @media (max-width: 992px) {
+      max-width: 435px;
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__image {
+    svg {
+      @media (max-width: 992px) {
+        width: 273px;
+        height: 312px;
+      }
+
+      @media (max-width: 576px) {
+        width: 220px;
+        height: 250px;
+      }
+    }
   }
 }
