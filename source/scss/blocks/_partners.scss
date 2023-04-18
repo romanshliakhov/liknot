@@ -22,9 +22,11 @@
   }
 
   &__details {
+    position: relative;
     width: 100%;
     padding: 50px 0;
     background-color: var(--socials-bg);
+    z-index: 1;
 
     @media (max-width: 575px) {
       padding: 30px 0;
@@ -71,11 +73,18 @@
       background-image: var(--partners-icon);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
       width: 58px;
       height: 51px;
       right: -65px;
       top: -25px;
 
+      @media (max-width: 575px) {
+        top: -30px;
+        width: 36px;
+        height: 31px;
+        right: -20px;
+      }
     }
   }
 }

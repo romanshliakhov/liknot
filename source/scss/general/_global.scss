@@ -11,6 +11,11 @@ body {
   font-weight: 400;
   color: var(--color-white);
   overflow-x: hidden;
+
+  @media (max-width: 575px) {
+    font-size: clamp(14px, 2.778vw, 16px);
+    line-height: clamp(18px, 3.646vw, 21px);
+  }
 }
 
 html {
@@ -156,7 +161,7 @@ input[type="number"] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -191,3 +196,5 @@ input[type="number"] {
     text-decoration: none;
   }
 }
+
+

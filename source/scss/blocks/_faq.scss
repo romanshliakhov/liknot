@@ -103,10 +103,17 @@
       background-image: var(--faq-icon);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
       width: 57px;
       height: 70px;
       right: -70px;
       bottom: 0;
+
+      @media (max-width: 768px) {
+        width: 46px;
+        height: 56px;
+        right: -60px;
+      }
     }
   }
 }

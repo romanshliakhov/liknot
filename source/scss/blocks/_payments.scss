@@ -30,11 +30,25 @@
       background-image: var(--payments-line);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
       width: 240px;
       height: 25px;
       right: -30px;
       bottom: -30px;
       transform: rotate(3.19deg);
+
+      @media (max-width: 992px) {
+        width: 195px;
+        height: 20px;
+        right: -40px;
+        bottom: -25px;
+      }
+
+      @media (max-width: 575px) {
+        right: initial;
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
 

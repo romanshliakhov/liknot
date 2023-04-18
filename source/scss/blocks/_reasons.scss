@@ -54,7 +54,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background: var(--socials-bg);
     border-radius: 20px;
     text-align: center;
 
@@ -109,10 +108,18 @@
       background-image: var(--reasons-line);
       background-position: center;
       background-repeat: no-repeat;
+      background-size: cover;
       width: 200px;
       height: 21px;
       right: -50px;
       bottom: -30px;
+
+      @media (max-width: 576px) {
+        width: 140px;
+        height: 20px;
+        right: -40px;
+        bottom: -25px;
+      }
     }
   }
 }

@@ -1,9 +1,43 @@
 header {
+  width: 100%;
+  position: fixed;
   padding: 20px 0;
+  background-color: var(--color-main);
+  z-index: 20;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .logo {
+    @media (max-width: 768px) {
+      width: 90px;
+    }
+  }
+
+  &__login {
+    transition: all 0.3s;
+
+    @media (max-width: 767px) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  &__nav {
+    transition: all 0.3s;
+
+    ul {
+      @media (max-width: 991px) {
+        grid-gap: 20px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
 }
