@@ -11,6 +11,7 @@
   // overflow-x: hidden;
   border-bottom-right-radius: 100%;
   transition: all 0.5s;
+  will-change: all;
 
   &::before {
     content: '';
@@ -22,7 +23,6 @@
     filter: blur(128.5px);
     bottom: -30%;
     right: -278px;
-
   }
 
   &::after {
