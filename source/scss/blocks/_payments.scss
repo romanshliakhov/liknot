@@ -45,10 +45,16 @@
       }
 
       @media (max-width: 575px) {
-        right: initial;
-        left: 50%;
-        transform: translateX(-50%);
+        right: -10px;
+        width: 110px;
+        height: 12px;
+        bottom: -17px;
       }
+    }
+
+    @media (max-width: 575px) {
+      font-size: 20px;
+      line-height: 22px;
     }
   }
 
