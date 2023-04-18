@@ -48,12 +48,13 @@
   }
 
   &__info-item {
+    position: relative;
     min-height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: var(--socials-bg);
+    // background: var(--socials-bg);
     border-radius: 20px;
     text-align: center;
 
@@ -61,6 +62,41 @@
       display: flex;
       align-items: center;
       height: 178px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
+      border-radius: 20px;
+    }
+
+    &:first-child::before {
+      background-image: url('../img/reasons/reason1.png');
+    }
+
+    &:nth-child(2)::before {
+      background-image: url('../img/reasons/reason2.png');
+    }
+
+    &:nth-child(3)::before {
+      background-image: url('../img/reasons/reason3.png');
+    }
+
+    &:nth-child(4)::before {
+      background-image: url('../img/reasons/reason4.png');
+    }
+
+    &:nth-child(5)::before {
+      background-image: url('../img/reasons/reason5.png');
+    }
+
+    &:last-child::before {
+      background-image: url('../img/reasons/reason6.png');
     }
   }
 

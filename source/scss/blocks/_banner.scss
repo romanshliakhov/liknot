@@ -13,8 +13,10 @@
     margin-bottom: clamp(60px, 12.153vw, 70px);
   }
 
-  svg {
+  picture,
+  img {
     width: 100%;
     height: auto;
+    object-fit: cover;
   }
 }
