@@ -40,10 +40,6 @@
     @media (max-width: 768px) {
       max-width: clamp(135px, 23.438vw, 180px);
     }
-
-    // @media (max-width: 576px) {
-    //   max-width: 135px;
-    // }
   }
 
   &__right {
@@ -61,8 +57,22 @@
   }
 
   &__left-bot {
+    position: relative;
     display: flex;
     flex-direction: column;
     grid-gap: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--about-line);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 299px;
+      height: 224px;
+      left: 0;
+      bottom: -84px;
+      z-index: -1;
+    }
   }
 }

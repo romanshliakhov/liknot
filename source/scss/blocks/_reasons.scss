@@ -63,4 +63,20 @@
       height: 178px;
     }
   }
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--reasons-line);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 21px;
+      right: -50px;
+      bottom: -30px;
+    }
+  }
 }

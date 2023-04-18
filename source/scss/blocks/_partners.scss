@@ -61,4 +61,21 @@
       filter: grayscale(0);
     }
   }
+
+  &__title {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--partners-icon);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 58px;
+      height: 51px;
+      right: -65px;
+      top: -25px;
+
+    }
+  }
 }

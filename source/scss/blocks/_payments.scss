@@ -21,7 +21,21 @@
   }
 
   &__title {
+    position: relative;
     text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: var(--payments-line);
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 240px;
+      height: 25px;
+      right: -30px;
+      bottom: -30px;
+      transform: rotate(3.19deg);
+    }
   }
 
   &__info {
