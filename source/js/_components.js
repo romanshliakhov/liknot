@@ -14,6 +14,7 @@ import './components/coockie.js';
 // import './components/choices.js';
 // import './components/showPassword.js';
 import './components/smoothScroll.js';
+import './components/counterNumber.js';
 
 
 
