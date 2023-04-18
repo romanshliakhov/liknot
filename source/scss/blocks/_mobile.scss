@@ -5,10 +5,6 @@
   width: 0;
   height: 0;
   background-color: var(--color-main);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   z-index: 5;
   overflow: hidden;
   border-bottom-left-radius: 100%;
@@ -40,7 +36,7 @@
   }
 
   &.active {
-    display: flex;
+    display: block;
     width: 100%;
     height: 100vh;
     border-bottom-left-radius: 0;
