@@ -1,3 +1,4 @@
+import './components/animation.js';
 import './components/sliders.js';
 // import './components/select.js';
 import './components/burger.js';
@@ -15,6 +16,7 @@ import './components/coockie.js';
 // import './components/showPassword.js';
 import './components/smoothScroll.js';
 import './components/counterNumber.js';
+
 
 
 

@@ -4,39 +4,33 @@ import Swiper from '../vendor/swiper.js';
 let partnersSliderTop = new Swiper('.partners__slider-top', {
   observer: true,
   observeParents: true,
-  // centeredSlides: true,
   spaceBetween: 30,
   slidesPerView: 'auto',
-  loopedSlides: 3000,
-  // slidesPerGroup: 1,
-  loopPreventsSlide: false,
-  // loop: true,
-  speed: 3000,
+  speed: 8000,
+  loop: true,
   autoplay: {
     delay: 0,
-    disableOnInteraction: false,
-    reverseDirection: true
-  }
+  },
 });
+
+partnersSliderTop.autoplay.start();
 
 // slider partners bot
 let partnersSliderBot = new Swiper('.partners__slider-bot', {
   observer: true,
   observeParents: true,
   spaceBetween: 30,
-  slidesPerView: "auto",
-  loopedSlides: 3000,
-  // slidesPerGroup: 1,
-  loopPreventsSlide: false,
-  // loop: true,
-  speed: 3000,
+  slidesPerView: 'auto',
+  speed: 8000,
+  loop: true,
   autoplay: {
     delay: 0,
-    disableOnInteraction: false,
-    reverseDirection: false,
-  }
+    reverseDirection: true,
+    disableOnInteraction: true,
+  },
 });
 
+partnersSliderBot.autoplay.start();
 
 
 

@@ -41,10 +41,24 @@
     flex-direction: column;
     grid-gap: 30px;
     overflow: hidden;
+
+    .swiper-container {
+      margin: 0 -40px;
+      padding: 0 40px;
+      max-width: calc(100% + 80px);
+      width: 100%;
+      overflow: initial;
+    }
+  }
+
+  &__slider-wrapper {
+    transition-timing-function: linear !important;
   }
 
   &__slider-slide {
-    max-width: 253px;
+    max-width: fit-content;
+    display: flex;
+    justify-content: center;
   }
 
   &__item {
