@@ -18,7 +18,7 @@ header {
   }
 
   &__login {
-    transition: all 0.3s;
+    transition: 0.3s ease;
 
     @media (max-width: 767px) {
       opacity: 0;
@@ -27,7 +27,7 @@ header {
   }
 
   &__nav {
-    transition: all 0.3s;
+    transition: 0.3s ease;
 
     ul {
       @media (max-width: 991px) {
