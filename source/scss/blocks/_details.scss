@@ -183,7 +183,7 @@
 
     @media (max-width: 575px) {
       grid-template-columns: 72px 1fr;
-      grid-gap: 5px;
+      grid-gap: 10px;
     }
   }
 
@@ -235,7 +235,10 @@
     text-indent: 30px;
 
     @media (max-width: 575px) {
-      // max-width: 213px;
+      text-indent: 20px;
+      padding-right: 3px;
+      font-size: 13px;
+      line-height: 16px;
 
       br {
         display: none;
