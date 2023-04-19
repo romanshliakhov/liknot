@@ -235,6 +235,8 @@
     text-indent: 30px;
 
     @media (max-width: 575px) {
+      max-width: 213px;
+
       br {
         display: none;
       }
