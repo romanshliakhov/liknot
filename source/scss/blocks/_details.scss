@@ -232,6 +232,8 @@
   }
 
   &__info-descr {
+    text-indent: 30px;
+
     @media (max-width: 575px) {
       br {
         display: none;
