@@ -1,7 +1,7 @@
 const { end } = require("@popperjs/core");
 
 let valueDisplays = document.querySelectorAll('.counter');
-let interval = 2000;
+let interval = 1000;
 
 
 if(valueDisplays) {
