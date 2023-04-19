@@ -57,6 +57,10 @@
     justify-content: center;
   }
 
+  &__slider-bot {
+    direction: rtl;
+  }
+
   &__item {
     height: 121px;
     width: 253px;
