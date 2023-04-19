@@ -13,8 +13,6 @@ let partnersSliderTop = new Swiper('.partners__slider-top', {
   },
 });
 
-partnersSliderTop.autoplay.start();
-
 // slider partners bot
 let partnersSliderBot = new Swiper('.partners__slider-bot', {
   observer: true,
@@ -28,7 +26,8 @@ let partnersSliderBot = new Swiper('.partners__slider-bot', {
   },
 });
 
-partnersSliderBot.autoplay.start();
+
+
 
 
 
