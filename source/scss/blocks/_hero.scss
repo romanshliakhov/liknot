@@ -100,6 +100,7 @@
     grid-template-columns: 445px clamp(450px, 37.5vw, 540px);
     grid-gap: 35px;
     justify-content: space-between;
+    align-items: center;
 
     @media (max-width: 991px) {
       grid-gap: 50px;
@@ -108,9 +109,17 @@
       flex-direction: column-reverse;
     }
 
+    @media (max-width: 768px) {
+      align-items: flex-start;
+    }
+
     @media (max-width: 576px) {
       max-width: 100%;
     }
+  }
+
+  &__head-descr {
+    width: 100%;
   }
 
   &__btns {
