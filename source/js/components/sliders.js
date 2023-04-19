@@ -25,8 +25,8 @@ let partnersSliderBot = new Swiper('.partners__slider-bot', {
   loop: true,
   autoplay: {
     delay: 0,
-    reverseDirection: true,
-    disableOnInteraction: true,
+    // reverseDirection: true,
+    // disableOnInteraction: true,
   },
 });
 
